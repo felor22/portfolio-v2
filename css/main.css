@@ -99,7 +99,7 @@ textarea {
 /* COLORS =======================================
 Pink: #cc446a;
 Light Cream: #fafaf0;
-Light Blue: #;
+Light Blue: #6BBFD8;
 ================================================ */
 
 /* Global ======================================= */
@@ -146,7 +146,7 @@ img {
 }
 
 /* Header ======================================= */
-#desktop-nav {
+#header {
     display: none;
 }
 
@@ -162,6 +162,7 @@ header {
 
 header img {
     width: 40%;
+    height: auto;
 }
 
 .nav {
@@ -180,16 +181,27 @@ header img {
 }
 
 /* Main Content ================================== */
-main {
+/*main {
     width: 96%;
     padding: 0 2%;
     margin: auto;
     max-width: 960px;
+}*/
+
+main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 /* About ============================== */
 #desktop-about {
     display: none;
+}
+
+#mobile-about {
+    width: 96%;
+    padding: 0 2%;
 }
 
 #mobile-about h1 {
@@ -231,7 +243,7 @@ main {
     padding-bottom: 0.2em;
 }
 
-/* Work ============================== */
+/* Projects ============================== */
 
 #projects h1 {
     text-align: center;
@@ -239,7 +251,7 @@ main {
 
 .work-card {
     background-color: #cc446a;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     color: #fafaf0;
 }
 
@@ -422,8 +434,193 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+
+/* Nav Flexbox ==============================    
+    #mobile-header {
+        display: none;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+        padding: 0.5em 0;
+    }
+
+    #header img {
+        width: 20%;
+        height: auto;
+    }
+
+    #header nav {
+        display: flex; 
+        align-items: center;
+    }
+*/
+
+/* Nav ==============================   */
+    #mobile-header {
+        display: none;
+    } 
+
+    #header {
+        display: block;
+    }
+
+    nav {
+        height: 100px;
+        top: 0;
+        left: 0;
+        border-bottom: 3px solid #cc446a;
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        margin-right: 1em;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1em;
+    }
+
+    nav a:hover {
+        color: #cc446a;
+    }
+    
+
+    #header img {
+        width: 20%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+/* About ============================== */
+    #mobile-about {
+        display: none;
+    }
+
+    #desktop-about {
+        display: flex;
+        background-color: #cc446a;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-description h1 {
+        color: #fafaf0;
+        margin-bottom: 0;
+        margin-top: 0.5em;
+    } 
+
+    .about-description p {
+        margin-top: 0;
+        font-size: 1.1em;
+    }
+
+    .about-description {
+        width: 50%;
+        padding-left: 5em;
+        margin: 0;
+        color: #fafaf0;
+        font-size: 1em;
+    }
+
+    span {
+        font-weight: 500;
+    }
+
+    .about-photo {
+        display: flex;
+        width: 30%;
+        height: auto;
+        padding-top: 2em;
+        align-items: flex-end;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+/* Projects ============================== */
+    #projects {
+        display: flex;
+        justify-content: center;
+        background-image: url("bkgd-icons.png");
+    }
+
+    #projects h1 {
+        font-size: 3em;
+    }
+
+    .work-grid {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 8em;
+    }
+
+    .work-card {
+        width: 310px;
+        height: auto;
+        margin-right: 1em;
+    }
+
+/* Footer ============================== */
+    footer h2 {
+        font-size: 1.4em;
+    }
+
+    footer a {
+        font-size: 1.3em;
+    }
+
+    footer img {
+        width: 7%;
+        height: auto;
+    }
+}  
+
+@media only screen and (min-width: 960px) {
+
+/* Nav ============================== */   
+    #header {
+        border-bottom: 2px solid #cc446a;
+    }
+
+/* About ============================== */   
+    .about-description h1 {
+        font-size: 3.5em;
+    }
+
+    .about-description p {
+        font-size: 1.5em;
+    }
+
+/* Projects ============================== */   
+    .work-card {
+        margin-right: 5em;
+    }
+
+    .work-card:hover {
+        opacity: 0.7;
+        background: #6BBFD8;
+        cursor: pointer;
+    }
+
+/* Footer ============================== */   
+    footer img {
+        width: 5%;
+        height: auto;
+    }
+
+    footer h2 {
+        font-size: 1.5em;
+    }
+
 }
 
 @media print,
