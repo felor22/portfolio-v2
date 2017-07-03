@@ -286,6 +286,16 @@ main {
     padding: 0.3em 0.7em;    
 }
 
+.back-to-top {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: auto;
+    z-index: 100;    
+}
+
 /*#coming-soon {
     width: 100%;
     height: auto;
