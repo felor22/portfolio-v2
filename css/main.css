@@ -118,6 +118,7 @@ a {
 p {
     font-size: 1em;
     line-height: 1.5;
+    font-weight: 300;
 }
 
 h1 {
@@ -127,31 +128,16 @@ h1 {
     font-weight: normal;
 }
 
-h2, h3 {
+h3 {
     color: #fafaf0;
+    font-size: 1.2em;
+    font-weight: 400;
 }
 
 h2 {
-    font-size: 1.2em;
-}
-
-h3 {
-    font-size: 1em;
-    font-weight: 400;
-}
-
-.btn {
-    background-color: #cc446a;
-    width: 30%;
-    height: 2.5em;
-    border: none;
-    border-radius: 8px;
     color: #fafaf0;
-    display: block;
-    text-align: center;
+    font-size: 1.1em;
     font-weight: 400;
-    box-shadow: 2px 2px 0px #dadada;
-    margin: 0 auto;
 }
 
 img {
@@ -171,6 +157,7 @@ header {
 
 #logo {
     text-align: center;
+    margin-top: 0.5em;
 }
 
 header img {
@@ -183,11 +170,12 @@ header img {
 
 .nav li {
     display: inline;
-    margin-right: 2em;
+    margin-right: 1.7em;
 }
 
 .nav li a {
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: 400;
     border-bottom: 2px solid #cc446a;
 }
 
@@ -208,8 +196,12 @@ main {
     margin-bottom: 0;
 }
 
+#mobile-about p {
+    text-align: left;
+}
+
 .about-photo {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     height: auto;
 }
@@ -218,6 +210,127 @@ main {
     color: #cc446a;
 }
 
+.btn {
+    background-color: #cc446a;
+    width: 30%;
+    height: 2.5em;
+    border: none;
+    border-radius: 10px;
+    color: #fafaf0;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    /*box-shadow: 2px 2px 0px #dadada;*/
+    margin: 2em auto;
+}
+
+.border {
+    width: 75%;
+    margin: 0 auto;
+    border-bottom: solid 1px #cc446a;
+    padding-bottom: 0.2em;
+}
+
+/* Work ============================== */
+
+#projects h1 {
+    text-align: center;
+}
+
+.work-card {
+    background-color: #cc446a;
+    margin-bottom: 1.5em;
+    color: #fafaf0;
+}
+
+.work-card img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.work-card h3 {
+    margin-top: 0.75em;
+    margin-bottom: 0.25em;
+}
+
+.work-card p {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-weight: lighter;
+}
+
+.work-card ul {
+    padding: 0;
+    margin: 0;
+}
+
+.work-info {
+    padding: 0 0.5em 0.5em 0.5em;
+}
+
+.work-info li {
+    display: inline;
+    text-align: left;
+    border: solid 1px #fafaf0; 
+    border-radius: 30px;
+    padding: 0.3em;
+    margin-right: 0.76em;
+    line-height: 2.5em;
+    font-weight: 300;
+    font-size: 0.85em;
+}
+
+#ux {
+    padding: 0.3em 0.7em;    
+}
+
+/*#coming-soon {
+    width: 100%;
+    height: auto;
+    background-color: #cc446a;
+}*/
+
+/* Footer ============================== */
+
+footer {
+    width: 100%;
+    margin: auto;
+    background-color: #cc446a;
+    margin-top: 5em;
+    padding: 1em;
+    text-align: center;
+}
+
+footer img {
+    width: 12%;
+    height: auto;
+}
+
+footer ul {
+    margin-top: 1em;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin-right: 1em;
+}
+
+footer a, footer p {
+    color: #fafaf0;
+    font-weight: 300;
+}
+
+i {
+    padding-right: 0.5em;
+}
+
+footer p {
+    font-size: 0.8em;
+    padding-top: 1em;
+}
 
 /* ==========================================================================
    Helper classes
