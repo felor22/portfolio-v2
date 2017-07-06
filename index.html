@@ -32,18 +32,38 @@
                 </ul>
         </header>
 
-        <header id="header">
+        <!--<header id="header">
             <nav>
             <ul>
                 <li><a href="#about">about</a></li>
                 <li><a href="#projects">projects</a></li>
-                <li><a href="index.html"><img src="img/flora-logo.png" id="logo" alt="flora logo"></a></li>
+                <li id="logo"><a href="index.html"><img src="img/flora-logo.png" id="logo" alt="flora logo"></a></li>
                 <li><a href="https://drive.google.com/file/d/0B3CVqld6lpgDQUM4UW9wa2tUMTQ/view?usp=sharing
 " target="_blank">resume</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
             </nav>
-        </header>
+        </header>-->
+
+        <header id="header">
+            <div id="nav-wrapper">
+                <ul class="left-nav">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                </ul>
+
+                <figure class="logo">
+                    <a href="#"><img src="img/flora-logo.png" alt="flora logo"></a>
+                </figure>
+
+                <ul class="right-nav">
+                    <li><a href="https://drive.google.com/file/d/0B3CVqld6lpgDQUM4UW9wa2tUMTQ/view?usp=sharing
+        " target="_blank">resume</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </header>       
+
 
 
         <main>
@@ -63,75 +83,80 @@
             </section>
 
             <section id="desktop-about">
-                <article class="about-description">
-                    <h1>Hi there!</h1>
-                    <p>I am a visual storyteller with a B.A. in Anthropology, which helps me make meaningful, <span>user-centered</span> work.</p>
-                    <p>Mostly though I’m simply <span>curious</span> about the world around me and the people in it.</p>
-                    <p>This curiosity has led me to <span>travel</span> and live in different countries, including Japan, New Zealand, Iran, Guatemala and Samoa!</p>
-                </article>
-                <figure class="about-photo">
-                    <img src="img/photo-no-bkgd.png" alt="flora photo">
-                </figure>
+                <div class="about-wrapper">
+                    <article class="about-description">
+                        <h1>Hi there!</h1>
+                        <p>I am a visual storyteller with a B.A. in Anthropology, which helps me make meaningful, <span>user-centered</span> work.</p>
+                        <p>Mostly though I’m simply <span>curious</span> about the world around me and the people in it.</p>
+                        <p>This curiosity has led me to <span>travel</span> and live in different countries, including Japan, New Zealand, Iran, Guatemala and Samoa!</p>
+                    </article>
+                    <figure class="about-photo">
+                        <img src="img/photo-no-bkgd.png" alt="flora photo">
+                        <!--<img src="img/photo-circle.png" alt="flora photo">-->
+                    </figure>
+                </div>
             </section>
 
             <section id="projects">
                 <h1>Projects</h1>
-                <div class="work-grid">
-                <div class="work-card">
-                    <img src="img/work-card-mm.png" alt="website revamped preview photo">
-                    <article class="work-info">
-                        <h3>Website Revamp</h3>
-                        <p>Created the structure for a more streamlined and user-friendly website</p>
-                        <ul>
-                            <li>Information Architecture</li>
-                            <li id="ux">UX</li>
-                            <li>Design4Good</li>
-                            <li>Ethnographic Research</li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="work-card">
-                    <img src="img/work-card-oranga.png" alt="promotional videos preview photo">
-                    <article class="work-info">
-                        <h3>Promotional Videos</h3>
-                        <p>Directed and edited videos for an on-site holistic health clinic</p>
-                        <ul>
-                            <li>Final Cut Pro</li>
-                            <li>Video Editing</li>
-                            <li>Marketing</li>
-                            <li>Alternative Medicine</li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="work-card">
-                    <img src="img/work-card-cafe.png" alt="coffee shop brand preview photo">
-                    <article class="work-info">
-                        <h3>Coffee Shop Brand</h3>
-                        <p>Designed a brand identity, including logo, style guide and landing page</p>
-                        <ul>
-                            <li>Visual Design</li>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>InDesign</li>
-                            <li>Wireframes</li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="work-card">
-                    <!--<div class="work-photo-preview" id="coming-soon"></div>-->
-                    <img src="img/work-card-coming.png" alt="coming soon">
-                    <article class="work-info">
-                        <h3>Company Website</h3>
-                        <p>Developing and designing a website for a clinical research company</p>
-                        <ul>
-                            <li>WordPress</li>
-                            <li>PHP</li>
-                            <li>HTML</li>
-                            <br><li>Responsive Web Design</li>
-                            <li>CSS</li></br>
-                        </ul>
-                    </article>
-                </div>
+                <div class="work-wrapper">
+                    <div class="work-grid">
+                        <div class="work-card">
+                            <img src="img/work-card-mm.png" alt="website revamped preview photo">
+                            <article class="work-info">
+                                <h3>Website Revamp</h3>
+                                <p>Created the structure for a more streamlined and user-friendly website</p>
+                                <ul>
+                                    <li>Information Architecture</li>
+                                    <li id="ux">UX</li>
+                                    <br><li>Design4Good</li>
+                                    <li>Ethnographic Research</li></br>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="work-card">
+                            <img src="img/work-card-oranga.png" alt="promotional videos preview photo">
+                            <article class="work-info">
+                                <h3>Promotional Videos</h3>
+                                <p>Directed and edited videos for an <br>on-site holistic health clinic</br></p>
+                                <ul>
+                                    <li>Final Cut Pro</li>
+                                    <li>Video Editing</li>
+                                    <br><li>Marketing</li>
+                                    <li>Alternative Medicine</li></br>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="work-card">
+                            <img src="img/work-card-cafe.png" alt="coffee shop brand preview photo">
+                            <article class="work-info">
+                                <h3>Coffee Shop Brand</h3>
+                                <p>Designed a brand identity, including logo, style guide and landing page</p>
+                                <ul>
+                                    <li>Visual Design</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <br><li>InDesign</li>
+                                    <li>Wireframes</li></br>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="work-card">
+                            <!--<div class="work-photo-preview" id="coming-soon"></div>-->
+                            <img src="img/work-card-coming.png" alt="coming soon">
+                            <article class="work-info">
+                                <h3>Company Website</h3>
+                                <p>Developing and designing a website for a clinical research company</p>
+                                <ul>
+                                    <li>WordPress</li>
+                                    <li>PHP</li>
+                                    <li>HTML</li>
+                                    <br><li>Responsive Web Design</li>
+                                    <li>CSS</li></br>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
                 </div>
                 <a href="#" class="back-to-top">
                     <img src="img/scroll-to-top.svg">

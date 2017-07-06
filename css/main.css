@@ -161,17 +161,19 @@ header {
 }
 
 header img {
-    width: 40%;
+    max-width: 40%;
     height: auto;
 }
 
 .nav {
     text-align: center;
+    padding: 0;
 }
 
 .nav li {
     display: inline;
-    margin-right: 1.7em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
 }
 
 .nav li a {
@@ -286,7 +288,7 @@ main {
     display: inline;
     text-align: left;
     border: solid 1px #fafaf0; 
-    border-radius: 30px;
+    border-radius: 35px;
     padding: 0.3em;
     margin-right: 0.76em;
     line-height: 2.5em;
@@ -318,15 +320,14 @@ main {
 
 footer {
     width: 100%;
-    margin: auto;
     background-color: #cc446a;
     margin-top: 5em;
-    padding: 1em;
+    padding: 1em 0;
     text-align: center;
 }
 
 footer img {
-    width: 12%;
+    width: 11%;
     height: auto;
 }
 
@@ -337,7 +338,8 @@ footer ul {
 
 footer li {
     display: inline;
-    margin-right: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
 }
 
 footer a, footer p {
@@ -437,29 +439,84 @@ footer p {
 @media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
 
-/* Nav Flexbox ==============================    
+/* Nav Flexbox ============================== */ 
     #mobile-header {
         display: none;
     }
 
+    /*#logo {
+        margin-right: 0;
+        padding-right: 0;
+        max-width: 60%;
+    }*/
+
     #header {
         display: flex;
         justify-content: center;
-        padding: 0.5em 0;
+        width: 100%;
     }
 
-    #header img {
-        width: 20%;
-        height: auto;
+    #nav-wrapper {
+        display: flex;
+        max-width: 960px;
     }
 
-    #header nav {
-        display: flex; 
+    .logo img {
+        max-width: 50%;
+    }
+
+    #header ul {
+        width: 50%;
+        display: flex;
+    }
+
+    #header li {
+        list-style: none;
+        display: inline;
+    }
+
+    #left-nav {
+        order: 1;
+    }
+
+    #right-nav {
+        order: 3;
+    }
+
+
+    #header a {
+        margin-right: 3em;
+        display: flex;
         align-items: center;
     }
-*/
 
-/* Nav ==============================   */
+    /*header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        /*flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    header a {
+        padding: 1.25em 1.5em;
+        display: flex;
+        align-items: center;
+    }
+
+    header a:hover {
+        color: #cc446a;
+    }
+
+    header img {
+        width: 30%;
+        height: auto;
+    }*/
+
+
+
+/* Nav ==============================
     #mobile-header {
         display: none;
     } 
@@ -498,19 +555,36 @@ footer p {
         margin: 0;
         padding: 0;
     }
+*\
 
-/* About ============================== */
-    #mobile-about {
+/* About Float ==============================
+     #mobile-about {
         display: none;
     }
 
     #desktop-about {
-        display: flex;
+        display: block;
         background-color: #cc446a;
         margin: 0;
         padding: 0;
+        width: 100%;
+        height: 350px;
     }
 
+    .about-wrapper {
+        max-width: 960px;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .about-description {
+        width: 50%;
+        float: left;
+        color: #fafaf0;
+        padding-left: 3em;
+    }
+    
     .about-description h1 {
         color: #fafaf0;
         margin-bottom: 0;
@@ -522,12 +596,54 @@ footer p {
         font-size: 1.1em;
     }
 
+    span {
+        font-weight: 500;
+    }
+
+    .about-photo {
+        float: left;
+        width: 30%;
+        height: auto;
+        padding-top: 3em;
+        margin-bottom: 0;
+    }*/
+
+    /* About ============================== */
+    #mobile-about {
+        display: none;
+    }
+
+    #desktop-about {
+        display: flex;
+        background-color: #cc446a;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .about-wrapper {
+        display: flex;
+        max-width: 960px;
+    }
+
+    .about-description h1 {
+        color: #fafaf0;
+        margin-bottom: 0;
+        margin-top: 0.5em;
+        font-size: 3em;
+    } 
+
+    .about-description p {
+        margin-top: 0;
+        font-size: 0.95em;
+    }
+
     .about-description {
-        width: 50%;
-        padding-left: 5em;
+        width: 60%;
+        padding-left: 1em;
         margin: 0;
         color: #fafaf0;
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     span {
@@ -540,19 +656,19 @@ footer p {
         height: auto;
         padding-top: 2em;
         align-items: flex-end;
-        padding-bottom: 0;
-        margin-bottom: 0;
+        margin-left: 6em;
     }
 
 /* Projects ============================== */
-    #projects {
+    .work-wrapper {
         display: flex;
+        width: 100%;
         justify-content: center;
-        background-image: url("bkgd-icons.png");
+        /*background-image: url("bkgd-icons.png");*/
     }
 
     #projects h1 {
-        font-size: 3em;
+        font-size: 3.25em;
     }
 
     .work-grid {
@@ -560,13 +676,22 @@ footer p {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding-top: 8em;
     }
 
     .work-card {
         width: 310px;
         height: auto;
         margin-right: 1em;
+    }
+
+    .work-card:hover {
+        opacity: 0.7;
+        background: #6BBFD8;
+        cursor: pointer;
+    }
+
+    .back-to-top {
+        display: none;
     }
 
 /* Footer ============================== */
@@ -584,31 +709,26 @@ footer p {
     }
 }  
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 900px) {
 
 /* Nav ============================== */   
     #header {
         border-bottom: 2px solid #cc446a;
     }
 
-/* About ============================== */   
-    .about-description h1 {
-        font-size: 3.5em;
+    .logo img {
+        max-width: 0%;
     }
 
+/* About ============================== */
     .about-description p {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
 /* Projects ============================== */   
     .work-card {
-        margin-right: 5em;
-    }
-
-    .work-card:hover {
-        opacity: 0.7;
-        background: #6BBFD8;
-        cursor: pointer;
+        margin-right: 2.5em;
+        margin-left: 2.5em;
     }
 
 /* Footer ============================== */   
