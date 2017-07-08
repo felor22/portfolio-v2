@@ -298,9 +298,10 @@ main {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 10%;
+    width: 15%;
     height: auto;
-    z-index: 100;    
+    z-index: 100;
+    padding: 1em;
 }
 
 /* Footer ============================== */
@@ -432,12 +433,19 @@ html, body, .fixed-nav-wrapper {
 }
 
 .fixed-nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 main {
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     position: relative;
     overflow-y: auto;
 }
@@ -448,15 +456,23 @@ main {
     }
 
     #header {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 100%;
-        flex: 0 0 auto;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
         background-color: #fafaf0;
         border-bottom: 3px solid #6BBFD8;
     }
 
     #nav-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         max-width: 960px;
     }
@@ -480,15 +496,22 @@ main {
 
     #header ul {
         width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     #header li {
         list-style: none;
         display: inline;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         font-size: 1.1em;
         font-weight: 300;
     }
@@ -509,14 +532,20 @@ main {
     }
 
     #about {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background-color: #cc446a;
         margin: 0;
         padding: 0;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .about-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         max-width: 960px;
     }
@@ -546,19 +575,27 @@ main {
     }
 
     .about-photo {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 30%;
         height: auto;
         padding-top: 2em;
-        align-items: flex-end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
         margin-left: 4em;
     }
 
 /* Projects ============================== */
     .work-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     #projects h1 {
@@ -567,21 +604,21 @@ main {
 
     .work-grid {
         width: 90%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .work-card {
-        width: 45%;
+        width: 47%;
         height: auto;
-        margin-right: 1em;
-    }
-
-    .work-card:hover {
-        opacity: 0.7;
-        background: #6BBFD8;
-        cursor: pointer;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
     }
 
     .back-to-top {
@@ -621,6 +658,12 @@ main {
         width: 42%;
     }
 
+    .work-card:hover {
+        opacity: 0.7;
+        background: #6BBFD8;
+        cursor: pointer;
+    }
+
     #projects h1 {
         margin-bottom: 0;
     }
@@ -638,6 +681,7 @@ main {
         padding: 0.4em;
         line-height: 2.8em;
     }
+
 
 /* Footer ============================== */   
     footer img {
