@@ -128,13 +128,17 @@ h1 {
     font-weight: normal;
 }
 
+/*h2 {
+    color: #fafaf0;
+}*/
+
 h3 {
     color: #fafaf0;
     font-size: 1.2em;
     font-weight: 400;
 }
 
-h2 {
+h4 {
     color: #fafaf0;
     font-size: 1.1em;
     font-weight: 400;
@@ -144,6 +148,14 @@ img {
     width: 100%;
     height: auto;
 }
+
+figcaption {
+    padding: 1%;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+}
+
 
 /* Header ======================================= */
 #header {
@@ -214,7 +226,7 @@ main {
 }
 
 #mobile-about span {
-    color: #cc446a;
+    font-weight: 500;
 }
 
 .btn {
@@ -298,7 +310,7 @@ main {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 15%;
+    width: 13%;
     height: auto;
     z-index: 100;
     padding: 1em;
@@ -343,6 +355,40 @@ footer p {
     font-size: 0.8em;
     padding-top: 1em;
 }
+
+/* Project Page ============================== */
+.case-wrapper p, .case-wrapper h2, .case-wrapper h3 {
+    padding: 0 2%;
+}
+
+.intro {
+    color: #fafaf0;
+    background-color: #cc446a;
+    padding: 1% 0;
+    margin-top: 2em;
+}
+
+.intro #client {
+    font-weight: lighter;
+}
+
+#pink-title {
+    color: #cc446a;
+}
+
+.case-wrapper img {
+    border: 1px solid #cc446a;
+    padding-top: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -424,7 +470,7 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
     /* Style adjustments for viewports that meet the condition */
 
 /* Global ============================== */ 
@@ -467,7 +513,7 @@ main {
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         background-color: #fafaf0;
-        border-bottom: 3px solid #6BBFD8;
+        border-bottom: 3px solid #cc446a;
     }
 
     #nav-wrapper {
@@ -626,7 +672,7 @@ main {
     }
 
 /* Footer ============================== */
-    footer h2 {
+    footer h4 {
         font-size: 1.4em;
     }
 
@@ -638,7 +684,55 @@ main {
         width: 7%;
         height: auto;
     }
-}  
+
+/* Project Page ============================== */
+    .intro {
+        margin: 0;
+    }
+
+    /*.intro h2, .intro h3, .intro p {
+        padding: 0 10%;
+    }*/
+
+    .intro-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+   .case-images {
+        display: inline-block;
+    }
+
+    .case-wrapper img {
+        margin-bottom: 0;
+    }
+
+    #left {
+        width: 47.5%;
+        float: left;
+        padding: 0;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .process, .results {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+
+    #pink-title {
+        margin-top: 0;
+    }
+
+    #mm-new {
+        margin-bottom: 8%;
+        width: 80%;
+        height: auto;
+    }
+}
+
+
 
 @media only screen and (min-width: 900px) {
 
@@ -689,7 +783,7 @@ main {
         height: auto;
     }
 
-    footer h2 {
+    footer h4 {
         font-size: 1.5em;
     }
 
