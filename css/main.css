@@ -372,16 +372,20 @@ footer p {
     font-weight: lighter;
 }
 
-#pink-title {
+.pink-title {
     color: #cc446a;
 }
 
 .case-wrapper img {
-    border: 1px solid #cc446a;
+    border: 2px solid #cc446a;
     padding-top: 0;
     width: 100%;
     height: auto;
-    margin-bottom: 1em;
+    margin: 0;
+}
+
+.case-images {
+    margin: 4% 2%;
 }
 
 
@@ -687,7 +691,7 @@ main {
 
 /* Project Page ============================== */
     .intro {
-        margin: 0;
+        margin: 0 0 4% 0;
     }
 
     /*.intro h2, .intro h3, .intro p {
@@ -701,18 +705,26 @@ main {
 
    .case-images {
         display: inline-block;
+        margin: 0 2%;
     }
 
     .case-wrapper img {
         margin-bottom: 0;
     }
 
-    #left {
+    .left {
         width: 47.5%;
         float: left;
         padding: 0;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
+        margin: 0 1.25%;
+    }
+
+    .left img {
+        width: 100%;
+    }
+
+    figcaption {
+        clear: both;
     }
 
     .process, .results {
@@ -725,11 +737,18 @@ main {
         margin-top: 0;
     }
 
-    #mm-new {
-        margin-bottom: 8%;
-        width: 80%;
-        height: auto;
+    .mm-new {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
     }
+
+    /*.mm-new img {  
+        height: auto;
+        margin: 0 auto;
+    }*/
 }
 
 
