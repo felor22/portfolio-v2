@@ -365,7 +365,11 @@ footer p {
     color: #fafaf0;
     background-color: #cc446a;
     padding: 1% 0;
-    margin-top: 2em;
+    margin: 0 0 4% 0;
+}
+
+.intro h2 {
+    letter-spacing: 0.03em;
 }
 
 .intro #client {
@@ -377,7 +381,8 @@ footer p {
 }
 
 .case-wrapper img {
-    border: 2px solid #cc446a;
+    /*border-bottom: 1px solid #cc446a;*/
+    padding-bottom: 0.5em;
     padding-top: 0;
     width: 100%;
     height: auto;
@@ -388,8 +393,32 @@ footer p {
     margin: 4% 2%;
 }
 
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /*56.25%*/
+    padding-top: 0.5em; /*25px*/
+    height: 0;
+}
 
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
+.case-wrapper a {
+    color: #6BBFD8;
+}
+
+.case-wrapper span {
+    font-weight: bolder;
+ }
+
+.brand img {
+    border: none;
+}
 
 
 
@@ -690,17 +719,18 @@ main {
     }
 
 /* Project Page ============================== */
-    .intro {
-        margin: 0 0 4% 0;
-    }
 
     /*.intro h2, .intro h3, .intro p {
         padding: 0 10%;
     }*/
 
     .intro-wrapper {
-        max-width: 1200px;
+        max-width: 96%;
         margin: 0 auto;
+    }
+
+    .intro {
+        margin-bottom: 1em;
     }
 
    .case-images {
@@ -708,8 +738,8 @@ main {
         margin: 0 2%;
     }
 
-    .case-wrapper img {
-        margin-bottom: 0;
+    .case-images img {
+        margin-bottom: 2%;
     }
 
     .left {
@@ -725,6 +755,7 @@ main {
 
     figcaption {
         clear: both;
+        padding-top: 0;
     }
 
     .process, .results {
@@ -733,11 +764,12 @@ main {
         padding: 0 2%;
     }
 
-    #pink-title {
+    .pink-title {
         margin-top: 0;
+        clear: both;
     }
 
-    .mm-new {
+    .single {
         display: block;
         width: 70%;
         margin-left: auto;
@@ -745,15 +777,16 @@ main {
         margin-bottom: 2%;
     }
 
-    /*.mm-new img {  
-        height: auto;
+    .video-wrapper {
+        width: 75%;
         margin: 0 auto;
-    }*/
+    }
+
 }
 
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 57em) {
 
 /* Nav ==============================    
     #header {
@@ -774,6 +807,9 @@ main {
     .work-card:hover {
         opacity: 0.7;
         background: #6BBFD8;
+    }
+
+    .work-card img:hover {
         cursor: pointer;
     }
 
