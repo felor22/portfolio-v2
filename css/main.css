@@ -305,6 +305,8 @@ main {
     padding: 0.3em 0.7em;    
 }
 
+/* Scroll Up Button ============================== */
+
 .back-to-top {
     margin: 0;
     position: fixed;
@@ -315,6 +317,7 @@ main {
     z-index: 100;
     padding: 1em;
 }
+
 
 /* Footer ============================== */
 
